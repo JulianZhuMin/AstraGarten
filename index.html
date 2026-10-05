@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- hub-version 2026-10-05c-yell-dao-name -->
+<!-- hub-version 2026-10-05d-bilingual -->
 <html lang="zh-HK">
 <head>
 <meta charset="utf-8">
@@ -19,7 +19,7 @@
   h1 { font-size: 2.6em; margin: .1em 0; color: #ff7a59; text-shadow: 3px 3px 0 #fff; }
   .intro {
     font-size: 1.3em; font-weight: bold; margin: .4em auto 0; max-width: 30em;
-    background: #fff; border-radius: 999px; padding: .5em 1.2em; color: #7a4fb5;
+    background: #fff; border-radius: 28px; padding: .5em 1.2em; color: #7a4fb5;
     box-shadow: 0 4px 0 #f3c9e0;
   }
   .hello { font-size: 1.15em; margin-top: 1em; }
@@ -45,6 +45,14 @@
     background: var(--c); color: #fff; border-radius: 999px; padding: .3em 1.1em;
   }
   footer { text-align: center; font-size: 1.05em; margin-top: 1.5em; color: #7a6a88; }
+  /* Bilingual: every Chinese line has its English line directly below */
+  .zh, .en-line { display: block; }
+  .en-line { font-size: .85em; font-weight: normal; color: #5e4f6e; margin-top: .25em; line-height: 1.45; }
+  .intro .en-line { color: #7a4fb5; font-weight: 600; }
+  .card p + p { margin-top: .5em; }
+  .card p.en-line { font-size: 1.05em; }
+  .play .en-line { display: inline; font-size: .8em; color: #fff; font-weight: bold; margin: 0 0 0 .3em; }
+  footer .en-line { color: #7a6a88; }
 </style>
 </head>
 <body>
@@ -52,32 +60,35 @@
 <header>
   <div class="stars" aria-hidden="true">⭐🌈⭐</div>
   <h1>星星學樂園 <span class="en" style="font-size:.55em;display:block;color:#7a4fb5;text-shadow:none;font-weight:600">AstraGarten</span></h1>
-  <p class="intro">幫助二至四歲小朋友提升語言認知及專注力嘅小遊戲樂園</p>
-  <p class="hello">小朋友，今日想玩邊個遊戲呀？叫爸爸媽媽幫你撳一下，就可以開始玩喇！</p>
+  <p class="intro"><span class="zh">幫助二至四歲小朋友提升語言認知及專注力嘅小遊戲樂園</span><span class="en-line" lang="en">A playground of little games that help 2- to 4-year-olds build language, understanding and focus</span></p>
+  <p class="hello"><span class="zh">小朋友，今日想玩邊個遊戲呀？叫爸爸媽媽幫你撳一下，就可以開始玩喇！</span><span class="en-line" lang="en">Hi little one, which game do you want to play today? Ask Mummy or Daddy to tap it for you, and off you go!</span></p>
 </header>
 
 <div class="card music">
   <span class="emoji" aria-hidden="true">🎵🐰🌸</span>
   <h2><a href="https://julianzhumin.github.io/tap-tap-music-for-toddlers/">兒歌彈彈樂 Tap Tap Music</a></h2>
   <p>撳一撳公仔，兒歌就會被演奏出嚟！有《小兔子乖乖》、《一閃一閃小星星》同《櫻花》，每首歌都有得意動畫，唱完仲有人同你拍手㗎！</p>
-  <span class="play" aria-hidden="true">去玩 ▶</span>
+  <p class="en-line" lang="en">Tap and the nursery song plays, one note at a time! There's Little Bunny, Twinkle Twinkle Little Star and Sakura. Every song has a fun animation, and when it's finished everyone claps for you!</p>
+  <span class="play" aria-hidden="true">去玩 ▶<span class="en-line" lang="en">Play</span></span>
 </div>
 
 <div class="card go">
   <span class="emoji" aria-hidden="true">✈️🚇🚌🏍️🚒⛴️🚑🚕</span>
   <h2><a href="https://julianzhumin.github.io/say-and-go/">Say &amp; Go 嗌到我就出發</a></h2>
   <p>開場逐個慢速介紹飛機、地鐵、巴士、電單車、消防車、渡輪、救傷車同的士（airplane、train、Bus、Motorbike、Fire truck、Ferry、ambulance、taxi），介紹時唔問問題。之後每輪隨機抽出最多三個未講過嘅，問「你想坐邊個？」，小朋友自己講出三個入面任何一隻嘅中文或英文名，嗰架就出發；撳圖淨係聽中英名。未出聲或講錯就七秒後換題。小朋友自己講齊八隻名先完結！</p>
-  <span class="play" aria-hidden="true">去玩 ▶</span>
+  <p class="en-line" lang="en">First, each vehicle is introduced slowly, one by one: airplane, train, bus, motorbike, fire truck, ferry, ambulance and taxi (no questions during the intro). Then each round shows up to three vehicles not named yet and asks which one you want to ride. When your child says the Chinese or English name of any of the three, that vehicle sets off with its own sound and animation. Tapping a picture just plays its name in Chinese and English. If nothing is said, or the answer doesn't match, a new question comes after seven seconds. The game ends when your child has named all eight vehicles!</p>
+  <span class="play" aria-hidden="true">去玩 ▶<span class="en-line" lang="en">Play</span></span>
 </div>
 
 <div class="card colors">
   <span class="emoji" aria-hidden="true">🔴🟡🔵🟢</span>
   <h2><a href="https://julianzhumin.github.io/happy-colours/">快樂認色 Happy Colors</a></h2>
   <p>八個唔同顏色嘅顏色公仔逐個出嚟講自己係咩顏色！聽到邊個顏色，就撳邊個顏色公仔。撳啱就會聽到「Yeah！」、拍手聲同口哨聲，仲有好多彩色泡泡！撳錯可以再試；同一個顏色錯兩次，啱嗰個顏色公仔會變大少少、行前講「我係紅色」，企喺度等你撳。七秒都冇撳，就會有隻卡通手套手指幫手點佢，佢會靜靜雞消失，然後去下一題。一齊認識紅、黃、藍、綠、灰、黑、白、啡八種顏色！</p>
-  <span class="play" aria-hidden="true">去玩 ▶</span>
+  <p class="en-line" lang="en">Eight color friends come out one by one and say what color they are! Listen for the color, then tap that friend. A right tap brings a "Yeah!", clapping, a whistle and lots of colorful bubbles! A wrong tap means try again. After two misses on the same color, the right friend grows a little, steps forward, says "I am red" and waits for your tap. If no one taps for seven seconds, a cartoon glove finger taps it, it quietly disappears, and the next question begins. Learn eight colors together: red, yellow, blue, green, gray, black, white and brown!</p>
+  <span class="play" aria-hidden="true">去玩 ▶<span class="en-line" lang="en">Play</span></span>
 </div>
 
-<footer><span aria-hidden="true">🌟</span> 玩完記得同爸爸媽媽講吓學咗啲乜呀！ <span aria-hidden="true">🌟</span></footer>
+<footer><span aria-hidden="true">🌟</span> 玩完記得同爸爸媽媽講吓學咗啲乜呀！ <span aria-hidden="true">🌟</span><span class="en-line" lang="en">When you finish, remember to tell Mummy and Daddy what you learned!</span></footer>
 </div>
 </body>
 </html>
